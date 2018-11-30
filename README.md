@@ -18,8 +18,8 @@ Then when your done create a PR and request the merge.
 
 ## Details
 
-Creates a role called developer to which the policy is attached.
-To use the repo you need to the role to your users.
+Creates a group called developer to which the policy is attached.
+To use the repo you need to the your users to the group.
 
 ## Inputs
 
