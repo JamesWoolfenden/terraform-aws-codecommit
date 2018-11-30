@@ -1,5 +1,15 @@
 data "aws_iam_policy_document" "restrictmaster" {
   statement {
+    effect = "Allow"
+
+    actions = [
+      "codecommit:*",
+    ]
+
+    resources = ["${aws_codecommit_repository.repo.arn}"]
+  }
+
+  statement {
     effect = "Deny"
 
     actions = [
