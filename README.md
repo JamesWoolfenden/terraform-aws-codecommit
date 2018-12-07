@@ -42,3 +42,5 @@ To use codecommit you need to set some git config properties for the credential 
 git config --global credential.helper '!aws codecommit credential-helper $@'
 git config --global credential.UseHttpPath true
 ```
+
+And for SSH look at: https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-ssh-unixes.html
