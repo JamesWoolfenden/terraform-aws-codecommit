@@ -10,7 +10,8 @@ To use this repo the expected behaviour is to branch when starting a new piece o
 Do your work, check-in.
 Push to your feature branch.
 
-``` git push -u origin feature/JGW-121-Remove-Project-Managers ```
+``` git push -u origin feature/JGW-121-Remove-Project-Managers 
+```
 
 Then when your done create a PR and request the merge.
 
