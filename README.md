@@ -3,11 +3,11 @@ This modules creates a repo with direct updates to the master denied. Its has be
 
 To use this repo the expected behaviour is to branch when starting a new piece of work, for example.
 
-``` git pull ```
+` git pull `
 
 Then branch:
 
-``` git branch -b feature/JGW-121-Remove-Project-Managers ```
+` git branch -b feature/JGW-121-Remove-Project-Managers `
 
 Do your work, check-in.
 Push to your feature branch.
