@@ -10,8 +10,7 @@ To use this repo the expected behaviour is to branch when starting a new piece o
 Do your work, check-in.
 Push to your feature branch.
 
-``` git push -u origin feature/JGW-121-Remove-Project-Managers 
-```
+` git push -u origin feature/JGW-121-Remove-Project-Managers `
 
 Then when your done create a PR and request the merge.
 
@@ -37,9 +36,9 @@ To use the repo you need to the your users to the group.
 
 ## Finally
 To use codecommit you need to set some git config properties for the credential helper:
-```
-git config --global credential.helper '!aws codecommit credential-helper $@'
-git config --global credential.UseHttpPath true
-```
+
+` git config --global credential.helper '!aws codecommit credential-helper $@' `
+
+` git config --global credential.UseHttpPath true `
 
 And for SSH look at: https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-ssh-unixes.html
