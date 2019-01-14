@@ -1,5 +1,4 @@
 resource "aws_cloudwatch_event_rule" "eventrule" {
-  #name        = "codecommit_${var.repositoryname}"
   description = "An Amazon CloudWatch Event rule has been created by AWS CodeCommit for the following repository: ${aws_codecommit_repository.repo.arn}."
 
   is_enabled = true
