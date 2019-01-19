@@ -2,7 +2,7 @@
 
 [![Slalom][logo]](https://slalom.com)
 
-# terraform-aws-codecommit [![Build Status](https://travis-ci.org/jameswoolfenden/terraform-aws-codecommit.svg?branch=master)](https://travis-ci.org/jameswoolfenden/terraform-aws-codecommit) [![Latest Release](https://img.shields.io/github/release/jameswoolfenden/terraform-aws-codecommit.svg)](https://github.com/jameswoolfenden/terraform-aws-codecommit/releases/latest)
+# terraform-aws-codecommit [![Build Status](https://api.travis-ci.com/JamesWoolfenden/terraform-aws-codecommit.svg?branch=master)](https://travis-ci.com/JamesWoolfenden/terraform-aws-codecommit) [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-codecommit.svg)](https://github.com/JamesWoolfenden/terraform-aws-codecommit/releases/latest)
 
 
 Terraform module to provision an AWS [`Codecommit`](https://aws.amazon.com/codecommit/) CI/CD system.
