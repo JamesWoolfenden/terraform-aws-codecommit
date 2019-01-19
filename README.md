@@ -20,24 +20,7 @@ This is modified version of the project ["SweetOps"](https://cpco.io/sweetops) f
 [<img align="right" title="Share on Twitter" src="https://docs.cloudposse.com/images/ionicons/social-twitter-outline-2.0.1-16x16-999999.svg" />][share_twitter]
 
 
-[![Terraform Open Source Modules](https://docs.cloudposse.com/images/terraform-open-source-modules.svg)][terraform_modules]
-
-
-
 It's 100% Open Source and licensed under the [APACHE2](LICENSE).
-
-
-
-
-
-
-
-We literally have [*hundreds of terraform modules*][terraform_modules] that are Open Source and well-maintained. Check them out!
-
-
-
-
-
 
 
 ## Usage
@@ -59,10 +42,14 @@ module "codecommit" {
 ```
 Available targets:
 
-  help/all:                          Display help for all targets
-  help/short:                        This help short screen
-  help:                              Help screen
-  lint:                              Lint terraform code
+  help/all:
+                          Display help for all targets
+  help/short:
+                        This help short screen
+  help:
+                              Help screen
+  lint:
+                              Lint terraform code
 
 ```
 ## Inputs
@@ -102,7 +89,6 @@ Then when your done create a PR and request the merge.
 
 Creates a group called developer to which the policy is attached.
 To use the repo you need to the your users to the group.
-
 ## Using Codecommit
 
 To use codecommit you need to set some git config properties for the credential helper:
@@ -193,9 +179,12 @@ Join their [Open Source Community][slack] on Slack.
 Please use the [issue tracker](https://github.com/jameswoolfenden/terraform-aws-codecommit/issues) to report any bugs or file feature requests.
 
 
-## Copyright
 
-Copyright © 2019-2019 [Slalom, LLC](https://cpco.io/copyright)
+## Copyrights
+
+Copyright © 2019-2019 [Slalom, LLC](https://slalom.com)
+
+
 
 
 

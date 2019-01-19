@@ -24,6 +24,12 @@ categories:
 # License of this project
 license: "APACHE2"
 
+# Copyrights
+copyrights:
+  - name: "Slalom, LLC"
+    url: "https://slalom.com"
+    year: "2019"
+
 # Canonical GitHub repo
 github_repo: jameswoolfenden/terraform-aws-codecommit
 
@@ -35,7 +41,6 @@ badges:
   - name: "Latest Release"
     image: "https://img.shields.io/github/release/jameswoolfenden/terraform-aws-codecommit.svg"
     url: "https://github.com/jameswoolfenden/terraform-aws-codecommit/releases/latest"
-
 
 related:
   - name: "terraform-aws-codebuild"
