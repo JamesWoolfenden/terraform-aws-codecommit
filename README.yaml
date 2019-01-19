@@ -1,0 +1,68 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: terraform-aws-codecommit
+
+# Tags of this project
+tags:
+  - aws
+  - terraform
+  - terraform-modules
+  - codecommit
+
+# Categories of this project
+categories:
+  - terraform-modules/CICD
+
+# Logo for this project
+logo: docs/slalom-logo.png
+
+# License of this project
+license: "APACHE2"
+
+# Canonical GitHub repo
+github_repo: jameswoolfenden/terraform-aws-codecommit
+
+# Badges to display
+badges:
+  - name: "Build Status"
+    image: "https://travis-ci.org/jameswoolfenden/terraform-aws-codecommit.svg?branch=master"
+    url: "https://travis-ci.org/jameswoolfenden/terraform-aws-codecommit"
+  - name: "Latest Release"
+    image: "https://img.shields.io/github/release/jameswoolfenden/terraform-aws-codecommit.svg"
+    url: "https://github.com/jameswoolfenden/terraform-aws-codecommit/releases/latest"
+
+
+related:
+  - name: "terraform-aws-codebuild"
+    description: "Making a Build pipeline"
+    url: "https://github.com/jameswoolfenden/terraform-aws-codebuild"
+ 
+# Short description of this project
+description: |-
+  Terraform module to provision an AWS [`Codecommit`](https://aws.amazon.com/codecommit/) CI/CD system.
+
+# How to use this project
+usage: |-
+  Include this repository as a module in your existing terraform code:
+
+  ```hcl
+  module "codecommit" {
+    source     = "git::https://github.com/jameswoolfenden/terraform-aws-codecommit.git?ref=master"
+  }
+  ```
+
+
+
+include:
+  - "docs/targets.md"
+  - "docs/terraform.md"
+
+# Contributors to this project
+contributors:
+  - name: "James Woolfenden"
+    github: "jameswoolfenden"
