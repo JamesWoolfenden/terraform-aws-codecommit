@@ -19,7 +19,7 @@ categories:
   - terraform-modules/CICD
 
 # Logo for this project
-logo: docs/slalom-logo.png
+#logo: docs/slalom-logo.png
 
 # License of this project
 license: "APACHE2"
@@ -41,7 +41,7 @@ related:
   - name: "terraform-aws-codebuild"
     description: "Making a Build pipeline"
     url: "https://github.com/jameswoolfenden/terraform-aws-codebuild"
- 
+
 # Short description of this project
 description: |-
   Terraform module to provision an AWS [`Codecommit`](https://aws.amazon.com/codecommit/) CI/CD system.
@@ -56,11 +56,11 @@ usage: |-
   }
   ```
 
-
-
 include:
   - "docs/targets.md"
   - "docs/terraform.md"
+  - "docs/instructions.md"
+  - "docs/codecommit.md"
 
 # Contributors to this project
 contributors:
