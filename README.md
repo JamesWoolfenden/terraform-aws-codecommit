@@ -5,13 +5,11 @@
 
 # terraform-aws-codecommit [![Build Status](https://travis-ci.org/jameswoolfenden/terraform-aws-codecommit.svg?branch=master)](https://travis-ci.org/jameswoolfenden/terraform-aws-codecommit) [![Latest Release](https://img.shields.io/github/release/jameswoolfenden/terraform-aws-codecommit.svg)](https://github.com/jameswoolfenden/terraform-aws-codecommit/releases/latest)
 
-
 Terraform module to provision an AWS [`Codecommit`](https://aws.amazon.com/codecommit/) CI/CD system.
-
 
 ---
 
-This is modified version of the project ["SweetOps"](https://cpco.io/sweetops) from Cloudposse. Sweet indeed.
+This project uses the build-harness this a is modified version of the project ["SweetOps"](https://cpco.io/sweetops) from Cloudposse. Sweet indeed.
 [<img align="right" title="Share via Email" src="https://docs.cloudposse.com/images/ionicons/ios-email-outline-2.0.1-16x16-999999.svg"/>][share_email]
 [<img align="right" title="Share on Google+" src="https://docs.cloudposse.com/images/ionicons/social-googleplus-outline-2.0.1-16x16-999999.svg" />][share_googleplus]
 [<img align="right" title="Share on Facebook" src="https://docs.cloudposse.com/images/ionicons/social-facebook-outline-2.0.1-16x16-999999.svg" />][share_facebook]
@@ -19,9 +17,7 @@ This is modified version of the project ["SweetOps"](https://cpco.io/sweetops) f
 [<img align="right" title="Share on LinkedIn" src="https://docs.cloudposse.com/images/ionicons/social-linkedin-outline-2.0.1-16x16-999999.svg" />][share_linkedin]
 [<img align="right" title="Share on Twitter" src="https://docs.cloudposse.com/images/ionicons/social-twitter-outline-2.0.1-16x16-999999.svg" />][share_twitter]
 
-
 It's 100% Open Source and licensed under the [APACHE2](LICENSE).
-
 
 ## Usage
 
@@ -29,17 +25,18 @@ Include this repository as a module in your existing terraform code:
 
 ```hcl
 module "codecommit" {
-  source     = "git::https://github.com/jameswoolfenden/terraform-aws-codecommit.git?ref=master"
+    source     = "git::https://github.com/jameswoolfenden/terraform-aws-codecommit.git?ref=master"
+    default_branch  = "${var.default_branch}"
+    repository_name = "${var.repository_name}"
+    developer_group = "${var.developer_group}"
+    depends_on      = ["${aws_iam_group.developer.group_name}"]
 }
 ```
 
 
-
-
-
-
 ## Makefile Targets
-```
+
+```bash
 Available targets:
 
   help/all:
@@ -52,6 +49,7 @@ Available targets:
                               Lint terraform code
 
 ```
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -145,28 +143,17 @@ ssh-add codecommit
 Test with:
 `ssh git-codecommit.us-east-2.amazonaws.com`
 
-
-
-
 ## Related Projects
 
 Check out these related projects.
 
 - [terraform-aws-codebuild](https://github.com/jameswoolfenden/terraform-aws-codebuild) - Making a Build pipeline
 
-
-
 ## Help
 
 **Got a question?**
 
 File a GitHub [issue](https://github.com/jameswoolfenden/terraform-aws-codecommit/issues).
-
-
-
-## Terraform Module Development
-
-
 
 ## Slack Community
 
@@ -179,13 +166,9 @@ Join their [Open Source Community][slack] on Slack.
 Please use the [issue tracker](https://github.com/jameswoolfenden/terraform-aws-codecommit/issues) to report any bugs or file feature requests.
 
 
-
 ## Copyrights
 
 Copyright © 2019-2019 [Slalom, LLC](https://slalom.com)
-
-
-
 
 
 ## License
@@ -210,13 +193,6 @@ See [LICENSE](LICENSE) for full details.
     KIND, either express or implied.  See the License for the
     specific language governing permissions and limitations
     under the License.
-
-
-
-
-
-
-
 
 
 
