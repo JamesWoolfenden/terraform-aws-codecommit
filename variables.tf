@@ -13,6 +13,7 @@ variable "developer_group" {
   description = "An existing Iam Group to attach the policy permissions to"
 }
 
+# this is enables you to add dependancies
 variable depends_on {
   default     = []
   description = "This is a way to make a module depends on, which isnt built in."
