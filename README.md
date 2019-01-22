@@ -38,11 +38,6 @@ module "codecommit" {
 }
 ```
 
-
-
-
-
-
 ## Makefile Targets
 ```make
 Available targets:
