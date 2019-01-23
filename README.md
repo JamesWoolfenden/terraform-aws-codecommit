@@ -4,25 +4,13 @@
 
 # terraform-aws-codecommit [![Build Status](https://api.travis-ci.com/JamesWoolfenden/terraform-aws-codecommit.svg?branch=master)](https://travis-ci.com/JamesWoolfenden/terraform-aws-codecommit) [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-codecommit.svg)](https://github.com/JamesWoolfenden/terraform-aws-codecommit/releases/latest)
 
-
 Terraform module to provision an AWS [`Codecommit`](https://aws.amazon.com/codecommit/) CI/CD system.
-
 
 ---
 
 This project uses the "build-harness" a modified version of the project ["SweetOps"](https://cpco.io/sweetops) from Cloudposse. Sweet indeed.
 
-
 It's 100% Open Source and licensed under the [APACHE2](LICENSE).
-
-
-
-
-
-
-
-
-
 
 ## Usage
 
@@ -39,16 +27,21 @@ module "codecommit" {
 ```
 
 ## Makefile Targets
+
 ```make
 Available targets:
 
-  help/all:                          Display help for all targets
-  help/short:                          This help short screen
+  help/all:
+                          Display help for all targets
+  help/short:
+                          This help short screen
   help:
                           Help screen
-  lint:                           Lint terraform code
+  lint:
+                          Lint terraform code
 
 ```
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -86,6 +79,7 @@ Then when your done create a PR and request the merge.
 
 Creates a group called developer to which the policy is attached.
 To use the repo you need to the your users to the group.
+
 ## Using Codecommit
 
 To use codecommit you need to set some git config properties for the credential helper:
@@ -142,16 +136,11 @@ ssh-add codecommit
 Test with:
 `ssh git-codecommit.us-east-2.amazonaws.com`
 
-
-
 ## Related Projects
 
 Check out these related projects.
 
 - [terraform-aws-codebuild](https://github.com/jameswoolfenden/terraform-aws-codebuild) - Making a Build pipeline
-
-
-
 
 ## Help
 
@@ -194,8 +183,7 @@ See [LICENSE](LICENSE) for full details.
 
 ### Contributors
 
-|  [![James Woolfenden][jameswoolfenden_avatar]][jameswoolfenden_homepage]<br/>[James Woolfenden][jameswoolfenden_homepage] |
-|---|
+  [![James Woolfenden][jameswoolfenden_avatar]][jameswoolfenden_homepage]<br/>[James Woolfenden][jameswoolfenden_homepage]
 
   [jameswoolfenden_homepage]: https://github.com/jameswoolfenden
   [jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
