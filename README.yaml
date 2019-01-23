@@ -36,7 +36,7 @@ github_repo: jameswoolfenden/terraform-aws-codecommit
 # Badges to display
 badges:
   - name: "Build Status"
-    image: "https://api.travis-ci.com/JamesWoolfenden/terraform-aws-codecommit.svg?branch=master"
+    image: "https://travis-ci.com/JamesWoolfenden/terraform-aws-codecommit.svg?branch=master"
     url: "https://travis-ci.com/JamesWoolfenden/terraform-aws-codecommit"
   - name: "Latest Release"
     image: "https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-codecommit.svg"
