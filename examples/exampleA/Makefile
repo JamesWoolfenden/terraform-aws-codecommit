@@ -1,11 +1,20 @@
 #Makefile
+ifdef OS
+   RM   = $(powershell  -noprofile rm .\.terraform\modules -force -recurse)
+   BLAT = $(powershell  -noprofile rm .\.terraform\ -force -recurse)
+else
+   ifeq ($(shell uname), Linux)
+      RM  = rm .terraform/modules/ -fr
+      BLAT= rm .terraform/ -fr
+   endif
+endif
 
 .PHONY: all
 
 all: init plan build
 
 init:
-	rm -rf .terraform/modules/
+	$(RM)
 	terraform init -reconfigure
 
 plan: init
@@ -26,3 +35,7 @@ docs:
 valid:
 	tflint
 	terraform fmt -check=true -diff=true
+
+purge:
+	$(BLAT)
+	terraform init -reconfigure
