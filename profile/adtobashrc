@@ -1,0 +1,3 @@
+function loginaws {
+  saml2aws --skip-prompt --username <username> --password <password> --role <yourrole> login --profile <yourprofile> --force
+}
