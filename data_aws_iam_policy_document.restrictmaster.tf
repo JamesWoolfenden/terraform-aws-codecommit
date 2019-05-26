@@ -6,7 +6,7 @@ data "aws_iam_policy_document" "restrictmaster" {
       "codecommit:*",
     ]
 
-    resources = ["${aws_codecommit_repository.repo.arn}"]
+    resources = [aws_codecommit_repository.repo.arn]
   }
 
   statement {
@@ -19,7 +19,7 @@ data "aws_iam_policy_document" "restrictmaster" {
       "codecommit:MergePullRequestByFastForward",
     ]
 
-    resources = ["${aws_codecommit_repository.repo.arn}"]
+    resources = [aws_codecommit_repository.repo.arn]
 
     condition {
       test     = "StringEqualsIfExists"

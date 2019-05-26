@@ -39,7 +39,7 @@ You can test this using:
 
 `aws s3 ls –-profile saml`
 
-And youll see the buckets in your account that you can see.
+And you'll see the buckets in your account that you can see.
 
 ## SSH and Https for CodeCommit
 
@@ -54,7 +54,7 @@ Windows:
 
 `pip install git-remote-codecommit`
 
-Then you can clone a repo using:
+Then you can clone a repository using:
 
 `git clone codecommit://saml@<repo-name>`
 (replacing `<repo-name>` with the name from codecommit not the git or https reference)

@@ -2,7 +2,7 @@
 
 [![Slalom][logo]](https://slalom.com)
 
-# terraform-aws-codecommit [![Build Status](https://api.travis-ci.com/JamesWoolfenden/terraform-aws-codecommit.svg?branch=master)](https://travis-ci.com/JamesWoolfenden/terraform-aws-codecommit) [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-codecommit.svg)](https://github.com/JamesWoolfenden/terraform-aws-codecommit/releases/latest)
+# terraform-aws-codecommit [![Build Status](https://travis-ci.com/JamesWoolfenden/terraform-aws-codecommit.svg?branch=master)](https://travis-ci.com/JamesWoolfenden/terraform-aws-codecommit) [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-codecommit.svg)](https://github.com/JamesWoolfenden/terraform-aws-codecommit/releases/latest)
 
 Terraform module to provision an AWS [`Codecommit`](https://aws.amazon.com/codecommit/) CI/CD system.
 
@@ -31,7 +31,7 @@ module "codecommit" {
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | default_branch | The name of the default repository branch | string | `master` | no |
-| depends_on | This is a way to make a module depends on, which isnt built in. | list | `<list>` | no |
+| depends_on | This is a way to make a module depends on, which isn't built in. | list | `<list>` | no |
 | developer_group | An existing Iam Group to attach the policy permissions to | string | - | yes |
 | repository_name | The name of your GIT repository | string | - | yes |
 
@@ -46,7 +46,7 @@ module "codecommit" {
 
 This modules creates a repo with direct updates to the master denied. Its has been a common DevOps process pattern to use the mainline model or trunk-based development <https://paulhammant.com/2013/04/05/what-is-trunk-based-development/,> however it is with experience that the optimal pattern is of short lived single activity feature branches, YMMV.
 
-To use this repo the expected behaviour is to branch when starting a new piece of work, for example.
+To use this repository the expected behaviour is to branch when starting a new piece of work, for example.
 
 `git pull`
 
@@ -182,5 +182,4 @@ See [LICENSE](LICENSE) for full details.
 [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-aws-codecommit&url=https://github.com/jameswoolfenden/terraform-aws-codecommit
 [share_reddit]: https://reddit.com/submit/?url=https://github.com/jameswoolfenden/terraform-aws-codecommit
 [share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/jameswoolfenden/terraform-aws-codecommit
-[share_googleplus]: https://plus.google.com/share?url=https://github.com/jameswoolfenden/terraform-aws-codecommit
 [share_email]: mailto:?subject=terraform-aws-codecommit&body=https://github.com/jameswoolfenden/terraform-aws-codecommit
