@@ -15,7 +15,6 @@ install:
 
 script:
   - echo Build Version $VERSION
-  - make terraform:install
   - make terraform:get-plugins
   - make terraform:get-modules
   - make terraform:lint
