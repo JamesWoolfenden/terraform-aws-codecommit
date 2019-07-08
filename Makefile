@@ -12,8 +12,8 @@ install:
 	curl '-#' -fL -o $(TMP)/terraform.zip $(TERRAFORM_URL) && \
 		unzip -q -d $(TMP)/ $(TMP)/terraform.zip && \
 		mv $(TMP)/terraform /usr/local/bin/terraform && \
-		rm -f $(TMP)/terraform.zip \
-		)
+		rm -f $(TMP)/terraform.zip
+
 	$(TERRAFORM) version
 
 validate:
