@@ -24,6 +24,7 @@ script:
 - terraform init -get-plugins -backend=false -input=false
 - terraform init -get -backend=false -input=false
 - terraform fmt
+- bash validate.sh
 
 ## Lint check Terraform
 
