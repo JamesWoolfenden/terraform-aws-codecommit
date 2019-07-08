@@ -15,10 +15,10 @@ install:
 
 script:
   - echo Build Version $VERSION
-  - make terraform:get-plugins
-  - make terraform:get-modules
-  - make terraform:lint
-  - bash ./validate.sh
+  - make get-plugins
+  - make get-modules
+  - make lint
+  - make validate
 
 after_success:
   - git config --global user.email "builds@travis-ci.com"
