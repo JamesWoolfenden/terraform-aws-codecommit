@@ -4,6 +4,7 @@ export README_DEPS ?= docs/targets.md docs/terraform.md
 
 .ONESHELL:
 TMP ?= /tmp
+OS ?= linux_amd64
 TERRAFORM_VERSION ?= 0.12.3
 TERRAFORM_URL ?= https://releases.hashicorp.com/terraform/$(TERRAFORM_VERSION)/terraform_$(TERRAFORM_VERSION)_$(OS)_amd64.zip
 
