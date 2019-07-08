@@ -2,6 +2,20 @@
 # List of targets the `readme` target should call before generating the readme
 export README_DEPS ?= docs/targets.md docs/terraform.md
 
+.ONESHELL:
+TMP ?= /tmp
+TERRAFORM_VERSION ?= 0.12.3
+TERRAFORM_URL ?= https://releases.hashicorp.com/terraform/$(TERRAFORM_VERSION)/terraform_$(TERRAFORM_VERSION)_$(OS)_amd64.zip
+
+## Install terraform
+install:
+	curl '-#' -fL -o $(TMP)/terraform.zip $(TERRAFORM_URL) && \
+		unzip -q -d $(TMP)/ $(TMP)/terraform.zip && \
+		mv $(TMP)/terraform $(TERRAFORM) && \
+		rm -f $(TMP)/terraform.zip \
+		)
+	$(TERRAFORM) version
+
 validate:
 	cd example/exampleA
 	terraform init

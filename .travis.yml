@@ -11,6 +11,7 @@ addons:
       - curl
 
 install:
+  - make install
 
 script:
   - echo Build Version $VERSION
