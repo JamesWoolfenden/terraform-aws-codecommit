@@ -5,17 +5,13 @@ export README_DEPS ?= docs/targets.md docs/terraform.md
 
 -include $(shell curl -sSL -o .build-harness "https://raw.githubusercontent.com/JamesWoolfenden/build-harness/master/templates/Makefile.build-harness"; echo .build-harness)
 
-## Lint terraform code
-lint:
-	$(SELF) terraform/install terraform/get-modules terraform/get-plugins terraform/lint terraform/validate
-
 validate:
 	cd example/exampleA
 	terraform init
 	terraform validate
 
 get-plugins:
-	terraform init -get-plugins -backend=false -input=false >/dev/null
+	terraform init -get-plugins -backend=false -input=false
 
 ## Ensure all modules can be fetched
 get-modules:
