@@ -10,9 +10,6 @@ addons:
       - make
       - curl
 
-install:
-  - make install
-
 script:
   - echo Build Version $VERSION
   - make get-plugins
