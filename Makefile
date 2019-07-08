@@ -3,19 +3,7 @@
 export README_DEPS ?= docs/targets.md docs/terraform.md
 
 .ONESHELL:
-TMP ?= /tmp
-OS ?= linux
 TERRAFORM ?= /usr/bin/terraform
-TERRAFORM_VERSION ?= 0.12.3
-TERRAFORM_URL ?= https://releases.hashicorp.com/terraform/$(TERRAFORM_VERSION)/terraform_$(TERRAFORM_VERSION)_$(OS)_amd64.zip
-
-## Install terraform
-install:
-	curl '-#' -fL -o $(TMP)/terraform.zip $(TERRAFORM_URL) && \
-		unzip -q $(TMP)/terraform.zip -d /usr/bin && \
-		rm -f $(TMP)/terraform.zip
-
-	$(TERRAFORM) version
 
 validate:
 	cd example/exampleA
