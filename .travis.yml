@@ -12,10 +12,10 @@ addons:
 
 script:
   - echo Build Version $VERSION
-  - make get-plugins
-  - make get-modules
-  - make lint
-  - make validate
+  - make terraform:get-plugins
+  - make terraform:get-modules
+  - make terraform:lint
+  - make terraform:validate
 
 after_success:
   - git config --global user.email "builds@travis-ci.com"
