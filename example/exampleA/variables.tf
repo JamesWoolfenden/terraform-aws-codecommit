@@ -1,4 +1,4 @@
 variable "repository_name" {
-  type        = "string"
+  type        = string
   description = "The name of your GIT repository"
 }
