@@ -12,8 +12,7 @@ TERRAFORM_URL ?= https://releases.hashicorp.com/terraform/$(TERRAFORM_VERSION)/t
 ## Install terraform
 install:
 	curl '-#' -fL -o $(TMP)/terraform.zip $(TERRAFORM_URL) && \
-		unzip -q -d $(TMP)/ $(TMP)/terraform.zip && \
-		mv $(TMP)/terraform $(TERRAFORM) && \
+		unzip -q -d $(TMP)/ $(TMP)/terraform.zip -d /usr/bin && \
 		rm -f $(TMP)/terraform.zip
 
 	$(TERRAFORM) version
