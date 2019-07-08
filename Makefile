@@ -3,21 +3,21 @@
 export README_DEPS ?= docs/targets.md docs/terraform.md
 
 .ONESHELL:
-TERRAFORM ?= /usr/bin/terraform
+
 
 validate:
 	cd example/exampleA
-	$(TERRAFORM) init
-	$(TERRAFORM) validate
+	terraform init
+	terraform validate
 
 get-plugins:
-	$(TERRAFORM) init -get-plugins -backend=false -input=false
+	terraform init -get-plugins -backend=false -input=false
 
 ## Ensure all modules can be fetched
 get-modules:
-	$(TERRAFORM) init -get -backend=false -input=false >/dev/null
+	terraform init -get -backend=false -input=false
 
 ## Lint check Terraform
 lint:
-	@FAIL=`$(TERRAFORM) fmt -write=false | xargs --no-run-if-empty -n 1 printf '\t- %s\n'`; \
+	@FAIL=`terraform fmt -write=false | xargs --no-run-if-empty -n 1 printf '\t- %s\n'`; \
 	[ -z "$$FAIL" ] || (echo "Terraform configuration needs linting. Run 'terraform fmt'"; echo $$FAIL; exit 1)
