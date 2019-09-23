@@ -1,1 +1,0 @@
-repository_name = "exampleA"
