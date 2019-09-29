@@ -59,8 +59,8 @@ Then when your done create a PR and request the merge.
 
 ## Details
 
-Creates a group called developer to which the policy is attached.
-To use the repo you need to the your users to the group.
+Creates a group called developer, to which the policy is attached.
+To use the repo you need to add the your users to that group.
 
 ## Using Codecommit
 
