@@ -28,7 +28,6 @@ module "codecommit" {
 |------|-------------|:----:|:-----:|:-----:|
 | default\_branch | The name of the default repository branch | string | `"master"` | no |
 | developer\_group | An existing Iam Group to attach the policy permissions to | string | `""` | no |
-| region | AWS region | string | `"eu-west-1"` | no |
 | repository\_name | The name of your GIT repository | string | n/a | yes |
 
 ## Outputs
