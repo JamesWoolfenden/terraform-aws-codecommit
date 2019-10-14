@@ -2,7 +2,7 @@
 
 # terraform-aws-codecommit [![Build Status](https://travis-ci.com/JamesWoolfenden/terraform-aws-codecommit.svg?branch=master)](https://travis-ci.com/JamesWoolfenden/terraform-aws-codecommit) [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-codecommit.svg)](https://github.com/JamesWoolfenden/terraform-aws-codecommit/releases/latest)
 
-Terraform module to provision an AWS [`Codecommit`](https://aws.amazon.com/codecommit/) CI/CD system.
+Terraform module to provision an AWS [`Codecommit`](https://aws.amazon.com/codecommit/) as part of a CI/CD system, includes SNS and triggers. It also includes a policy and group to restrict/branch protect the master branch.
 
 ---
 
@@ -14,7 +14,7 @@ Include this repository as a module in your existing terraform code:
 
 ```hcl
 module "codecommit" {
-  source     = "JamesWoolfenden/codecommit/aws"
+  source          = "JamesWoolfenden/codecommit/aws"
   default_branch  = var.default_branch
   repository_name = var.repository_name
   developer_group = var.developer_group
