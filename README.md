@@ -21,21 +21,27 @@ module "codecommit" {
 }
 ```
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Providers
+
+| Name | Version |
+|------|---------|
+| aws | n/a |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|:----:|:-----:|:-----:|
-| default\_branch | The name of the default repository branch | string | `"master"` | no |
-| developer\_group | An existing Iam Group to attach the policy permissions to | string | `""` | no |
-| repository\_name | The name of your GIT repository | string | n/a | yes |
+|------|-------------|------|---------|:-----:|
+| default\_branch | The name of the default repository branch | `string` | `"master"` | no |
+| developer\_group | An existing Iam Group to attach the policy permissions to | `string` | `""` | no |
+| repository\_name | The name of your GIT repository | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| clone\_url\_https |  |
-| clone\_url\_ssh |  |
+| clone\_url\_https | n/a |
+| clone\_url\_ssh | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
