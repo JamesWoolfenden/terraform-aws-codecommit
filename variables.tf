@@ -14,3 +14,9 @@ variable "developer_group" {
   type        = string
   default     = ""
 }
+
+variable "kms_master_key_id" {
+  type        = string
+  description = "The kms key to use"
+  default     = "alias/aws/sns"
+}
