@@ -1,10 +1,12 @@
 # Compiled files
 *.tfstate
 *.tfstate.backup
+*.zip
 
 # Module directory
 .terraform/
 .terraform
+__pycache__/
 .idea
 *.iml
 *.orig
@@ -17,4 +19,5 @@ lambda
 *~HEAD
 *backup
 *.bak
+.terraform.tfstate.lock.info
 *.log
