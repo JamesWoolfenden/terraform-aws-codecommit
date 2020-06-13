@@ -1,1 +1,1 @@
-repository_name = "exampleA"
+repository_name = "examplea"

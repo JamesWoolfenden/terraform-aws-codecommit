@@ -27,6 +27,10 @@ module "codecommit" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+No requirements.
+
 ## Providers
 
 | Name | Version |
@@ -36,7 +40,7 @@ module "codecommit" {
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:-----:|
+|------|-------------|------|---------|:--------:|
 | default\_branch | The name of the default repository branch | `string` | `"master"` | no |
 | developer\_group | An existing Iam Group to attach the policy permissions to | `string` | `""` | no |
 | kms\_master\_key\_id | The kms key to use | `string` | `"alias/aws/sns"` | no |

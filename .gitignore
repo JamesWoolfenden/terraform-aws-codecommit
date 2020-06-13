@@ -8,8 +8,6 @@
 .idea
 *.iml
 *.orig
-.build-harness
-build-harness
 *.ini
 *~HEAD
 *backup
@@ -19,3 +17,4 @@ lambda
 *~HEAD
 *backup
 *.bak
+*.log
