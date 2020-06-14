@@ -20,6 +20,7 @@ Include this repository as a module in your existing terraform code:
 ```hcl
 module "codecommit" {
   source          = "JamesWoolfenden/codecommit/aws"
+  version         = "v0.3.0"
   default_branch  = var.default_branch
   repository_name = var.repository_name
   developer_group = var.developer_group
@@ -187,8 +188,8 @@ under the License.
 [logo]: https://gist.githubusercontent.com/JamesWoolfenden/5c457434351e9fe732ca22b78fdd7d5e/raw/15933294ae2b00f5dba6557d2be88f4b4da21201/slalom-logo.png
 [website]: https://slalom.com
 [github]: https://github.com/jameswoolfenden
-[linkedin]: https://www.linkedin.com/company/slalom-consulting/
-[twitter]: https://twitter.com/Slalom
+[linkedin]: https://www.linkedin.com/in/jameswoolfenden/
+[twitter]: https://twitter.com/JimWoolfenden
 
 [share_twitter]: https://twitter.com/intent/tweet/?text=terraform-aws-codecommit&url=https://github.com/jameswoolfenden/terraform-aws-codecommit
 [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-aws-codecommit&url=https://github.com/jameswoolfenden/terraform-aws-codecommit
