@@ -15,7 +15,7 @@ It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 ## Usage
 
-![alt text](./diagram/codecommit.png)
+![alt text](./diagram/aws_codecommit.png)
 
 Include this repository as a module in your existing Terraform code:
 

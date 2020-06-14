@@ -5,4 +5,5 @@ from diagrams.aws.integration import SNS
 from diagrams.aws.management import Cloudwatch
 
 with Diagram("AWS Codecommit", show=False):
-    Codecommit("Repository") >> Cloudwatch("Change Trigger") >> SNS("SNS Fan Out")
+    with Cluster("Module"):
+        Codecommit("Code Repository") >> Cloudwatch("CW Change Trigger") >> SNS("SNS Fan Out")
