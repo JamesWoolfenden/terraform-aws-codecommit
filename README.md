@@ -15,7 +15,9 @@ It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 ## Usage
 
-Include this repository as a module in your existing terraform code:
+![alt text](./diagram/codecommit.png)
+
+Include this repository as a module in your existing Terraform code:
 
 ```hcl
 module "codecommit" {
