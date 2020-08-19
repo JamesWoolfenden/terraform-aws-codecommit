@@ -5,7 +5,7 @@
 [![Build Status](https://github.com/JamesWoolfenden/terraform-aws-codecommit/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-codecommit)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-codecommit.svg)](https://github.com/JamesWoolfenden/terraform-aws-codecommit/releases/latest)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
-[![pre-commit](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
+[![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
 
 Terraform module to provision an AWS [`Codecommit`](https://aws.amazon.com/codecommit/) as part of a CI/CD system, includes SNS and triggers. It also includes a policy and group to restrict/branch protect the master branch.
 
