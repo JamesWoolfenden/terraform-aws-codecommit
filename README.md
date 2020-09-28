@@ -28,7 +28,6 @@ module "codecommit" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 No requirements.
@@ -36,24 +35,24 @@ No requirements.
 ## Providers
 
 | Name | Version |
-| ---- | ------- |
-| aws  | n/a     |
+|------|---------|
+| aws | n/a |
 
 ## Inputs
 
-| Name              | Description                                               | Type     | Default           | Required |
-| ----------------- | --------------------------------------------------------- | -------- | ----------------- | :------: |
-| default_branch    | The name of the default repository branch                 | `string` | `"master"`        |    no    |
-| developer_group   | An existing Iam Group to attach the policy permissions to | `string` | `""`              |    no    |
-| kms_master_key_id | The kms key to use                                        | `string` | `"alias/aws/sns"` |    no    |
-| repository_name   | The name of your GIT repository                           | `string` | n/a               |   yes    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| default\_branch | The name of the default repository branch | `string` | `"master"` | no |
+| developer\_group | An existing Iam Group to attach the policy permissions to | `string` | `""` | no |
+| kms\_master\_key\_id | The kms key to use | `string` | `"alias/aws/sns"` | no |
+| repository\_name | The name of your GIT repository | `string` | n/a | yes |
 
 ## Outputs
 
-| Name            | Description |
-| --------------- | ----------- |
-| clone_url_https | n/a         |
-| clone_url_ssh   | n/a         |
+| Name | Description |
+|------|-------------|
+| clone\_url\_https | n/a |
+| clone\_url\_ssh | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
