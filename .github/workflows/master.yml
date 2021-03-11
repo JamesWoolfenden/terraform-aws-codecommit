@@ -6,7 +6,7 @@ on:
     branches:
       - master
 env:
-  terraform: 0.14.5
+  terraform: 0.14.8
   tf_target_dir: example/examplea
   branch: master
 jobs:

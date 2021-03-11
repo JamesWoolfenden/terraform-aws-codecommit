@@ -3,7 +3,7 @@
 name: pull_request
 on: pull_request
 env:
-  terraform: 0.14.5
+  terraform: 0.14.8
   tf_target_dir: example/examplea
 
 jobs:
