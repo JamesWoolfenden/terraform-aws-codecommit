@@ -1,2 +1,5 @@
 version: 0.1
 resource_usage:
+  module.codecommit.aws_sns_topic.notification:
+    monthly_requests: 0
+    request_size_kb: 0
