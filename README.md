@@ -31,6 +31,20 @@ module "codecommit" {
 }
 ```
 
+## Costs
+
+```md
+✔ Calculating monthly cost estimate
+
+Project: .
+
+ Name                                             Monthly Qty  Unit              Monthly Cost
+
+ module.codecommit.aws_sns_topic.notification
+ └─ Requests                                   Cost depends on usage: $0.50 per 1M requests
+
+ PROJECT TOTAL                                                                          $0.00
+```
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
