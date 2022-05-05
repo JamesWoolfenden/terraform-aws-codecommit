@@ -67,6 +67,8 @@ No modules.
 |------|------|
 | [aws_cloudwatch_event_rule.eventrule](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_rule) | resource |
 | [aws_cloudwatch_event_target.target](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_target) | resource |
+| [aws_codecommit_approval_rule_template.example](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/codecommit_approval_rule_template) | resource |
+| [aws_codecommit_approval_rule_template_association.link](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/codecommit_approval_rule_template_association) | resource |
 | [aws_codecommit_repository.repo](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/codecommit_repository) | resource |
 | [aws_iam_group_policy_attachment.restrict-attach](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_group_policy_attachment) | resource |
 | [aws_iam_policy.restrictmaster](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_policy) | resource |
@@ -80,10 +82,12 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_approver_role"></a> [approver\_role](#input\_approver\_role) | ARN of approver role | `string` | n/a | yes |
 | <a name="input_default_branch"></a> [default\_branch](#input\_default\_branch) | The name of the default repository branch | `string` | `"master"` | no |
 | <a name="input_developer_group"></a> [developer\_group](#input\_developer\_group) | An existing Iam Group to attach the policy permissions to | `string` | `""` | no |
-| <a name="input_kms_master_key_id"></a> [kms\_master\_key\_id](#input\_kms\_master\_key\_id) | The kms key to use | `string` | `"alias/aws/sns"` | no |
+| <a name="input_kms_master_key_id"></a> [kms\_master\_key\_id](#input\_kms\_master\_key\_id) | The kms key to use | `string` | n/a | yes |
 | <a name="input_repository_name"></a> [repository\_name](#input\_repository\_name) | The name of your GIT repository | `string` | n/a | yes |
+| <a name="input_template"></a> [template](#input\_template) | n/a | `map` | <pre>{<br>  "approvers": 2,<br>  "description": "This is an example approval rule template",<br>  "name": "MyExampleApprovalRuleTemplate"<br>}</pre> | no |
 
 ## Outputs
 

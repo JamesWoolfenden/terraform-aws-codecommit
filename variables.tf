@@ -18,5 +18,17 @@ variable "developer_group" {
 variable "kms_master_key_id" {
   type        = string
   description = "The kms key to use"
-  default     = "alias/aws/sns"
+}
+
+variable "approver_role" {
+  type        = string
+  description = "ARN of approver role"
+}
+
+variable "template" {
+  default = {
+    name        = "MyExampleApprovalRuleTemplate"
+    description = "This is an example approval rule template"
+    approvers   = 2
+  }
 }

@@ -4,7 +4,8 @@ data "aws_iam_policy_document" "sns_topic_policy" {
   statement {
     effect = "Allow"
 
-    actions = ["SNS:GetTopicAttributes",
+    actions = [
+      "SNS:GetTopicAttributes",
       "SNS:SetTopicAttributes",
       "SNS:AddPermission",
       "SNS:RemovePermission",
