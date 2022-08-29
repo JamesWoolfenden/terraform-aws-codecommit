@@ -5,7 +5,7 @@ resource "aws_codecommit_approval_rule_template" "example" {
   content = <<EOF
 {
     "Version": "2018-11-08",
-    "DestinationReferences": ["refs/heads/master"],
+    "DestinationReferences": ["refs/heads/${var.default_branch}"],
     "Statements": [{
         "Type": "Approvers",
         "NumberOfApprovalsNeeded": 2,
@@ -14,8 +14,6 @@ resource "aws_codecommit_approval_rule_template" "example" {
 }
 EOF
 }
-
-
 
 
 resource "aws_codecommit_approval_rule_template_association" "link" {

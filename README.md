@@ -83,7 +83,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_approver_role"></a> [approver\_role](#input\_approver\_role) | ARN of approver role | `string` | n/a | yes |
-| <a name="input_default_branch"></a> [default\_branch](#input\_default\_branch) | The name of the default repository branch | `string` | `"master"` | no |
+| <a name="input_default_branch"></a> [default\_branch](#input\_default\_branch) | The name of the default repository branch | `string` | `"main"` | no |
 | <a name="input_developer_group"></a> [developer\_group](#input\_developer\_group) | An existing Iam Group to attach the policy permissions to | `string` | `""` | no |
 | <a name="input_kms_master_key_id"></a> [kms\_master\_key\_id](#input\_kms\_master\_key\_id) | The kms key to use | `string` | n/a | yes |
 | <a name="input_repository_name"></a> [repository\_name](#input\_repository\_name) | The name of your GIT repository | `string` | n/a | yes |

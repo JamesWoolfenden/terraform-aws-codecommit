@@ -6,7 +6,7 @@ variable "repository_name" {
 variable "default_branch" {
   type        = string
   description = "The name of the default repository branch"
-  default     = "master"
+  default     = "main"
 }
 
 variable "developer_group" {
