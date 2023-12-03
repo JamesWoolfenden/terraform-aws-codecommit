@@ -14,8 +14,6 @@ resource "aws_codecommit_approval_rule_template" "example" {
 }
 EOF
 }
-
-
 resource "aws_codecommit_approval_rule_template_association" "link" {
   approval_rule_template_name = aws_codecommit_approval_rule_template.example.name
   repository_name             = aws_codecommit_repository.repo.repository_name
