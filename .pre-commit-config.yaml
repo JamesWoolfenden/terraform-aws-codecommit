@@ -58,3 +58,5 @@ repos:
     hooks:
       - id: ghat-go
         args: ["swot","-d", "."]
+      - id: ghat-go-sift
+        args: ["swift","-d", "."]
