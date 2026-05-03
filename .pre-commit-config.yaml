@@ -55,5 +55,5 @@ repos:
   - repo: https://github.com/jameswoolfenden/ghat
     rev: 9ac03a27b221b0173a40e66aac1d09f5be4db40c # v0.1.23
     hooks:
-      - id: ghat
+      - id: ghat-go
       - id: ghat-go-sift
