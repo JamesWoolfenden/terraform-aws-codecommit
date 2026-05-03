@@ -1,52 +1,12 @@
 ---
-# yamllint disable rule:line-length
 name: Pull Request
 on:
   pull_request:
   workflow_dispatch:
 
-env:
-  terraform: 1.3.0
-  tf_target_dir: example/examplea
-
-permissions: read-all
+permissions:
+  contents: read
 
 jobs:
-  terraform:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
-        with:
-          token: ${{ github.token }}
-          fetch-depth: '0'
-      - name: Terraform Init
-        uses: hashicorp/terraform-github-actions@b2ca17c0c25198c67c668c37edcbc45ca086a91e # v0.8.0
-        with:
-          tf_actions_version: ${{ env.terraform }}
-          tf_actions_subcommand: init
-          tf_actions_working_dir: ${{ env.tf_target_dir }}
-      - name: Terraform Validate
-        uses: hashicorp/terraform-github-actions@b2ca17c0c25198c67c668c37edcbc45ca086a91e # v0.8.0
-        with:
-          tf_actions_version: ${{ env.terraform }}
-          tf_actions_subcommand: validate
-          tf_actions_working_dir: ${{ env.tf_target_dir }}
-  security:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
-        with:
-          token: ${{ github.token }}
-          fetch-depth: '0'
-      - uses: actions/setup-python@65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236 # v4.7.1
-        with:
-          python-version: 3.11
-      - run: |
-          wget https://github.com/terraform-docs/terraform-docs/releases/download/v0.16.0/terraform-docs-v0.16.0-linux-amd64.tar.gz
-          mkdir "$GITHUB_WORKSPACE/bin"
-          tar -xvf terraform-docs*.tar.gz --directory "$GITHUB_WORKSPACE/bin"
-          chmod +x "$GITHUB_WORKSPACE/bin/terraform-docs"
-          echo "$GITHUB_WORKSPACE/bin" >> "$GITHUB_PATH"
-      - uses: pre-commit/action@646c83fcd040023954eafda54b4db0192ce70507 # v3.0.0
+  pr:
+    uses: JamesWoolfenden/.github/.github/workflows/terraform-pr.yml@main
