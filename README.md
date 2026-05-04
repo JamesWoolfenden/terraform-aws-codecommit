@@ -115,10 +115,16 @@ resource "aws_iam_policy" "terraform_pike" {
             "Sid": "VisualEditor0",
             "Effect": "Allow",
             "Action": [
+                "codecommit:AssociateApprovalRuleTemplateWithRepository",
+                "codecommit:CreateApprovalRuleTemplate",
                 "codecommit:CreateRepository",
+                "codecommit:DeleteApprovalRuleTemplate",
                 "codecommit:DeleteRepository",
+                "codecommit:DisassociateApprovalRuleTemplateFromRepository",
+                "codecommit:GetApprovalRuleTemplate",
                 "codecommit:GetRepository",
                 "codecommit:ListBranches",
+                "codecommit:ListRepositoriesForApprovalRuleTemplate",
                 "codecommit:ListTagsForResource",
                 "codecommit:UpdateRepositoryDescription"
             ],
