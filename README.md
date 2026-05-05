@@ -1,6 +1,6 @@
 # terraform-aws-codecommit
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-codecommit/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-codecommit)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-codecommit/workflows/Verify/badge.svg?branch=main)](https://github.com/JamesWoolfenden/terraform-aws-codecommit)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-codecommit.svg)](https://github.com/JamesWoolfenden/terraform-aws-codecommit/releases/latest)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-codecommit.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-codecommit/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
